@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!-- Esta etiqueta garantiza que se vea perfecto en celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CV - Maria Fernanda Rodriguez García</title>
+    
+    <!-- Bootstrap CSS (Para la responsividad) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu archivo de estilos -->
+    <link rel="stylesheet" href="stilo.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        
+        <!-- SIDEBAR (Panel Lateral Izquierdo - Solo Escritorio) -->
+        <aside class="sidebar d-none d-lg-flex flex-column">
+            <div class="sidebar-brand mb-5">
+                <i class="fas fa-code text-pink"></i> Maria Fernanda
+            </div>
+
+            <nav class="sidebar-nav flex-grow-1">
+                <a href="#inicio" class="nav-item active" onclick="showSection('inicio', this); return false;"><i class="fas fa-home"></i> Inicio</a>
+                <a href="#perfil" class="nav-item" onclick="showSection('perfil', this); return false;"><i class="far fa-user"></i> Perfil</a>
+                <a href="#habilidades" class="nav-item" onclick="showSection('habilidades', this); return false;"><i class="far fa-star"></i> Habilidades</a>
+                <a href="#experiencia" class="nav-item" onclick="showSection('experiencia', this); return false;"><i class="fas fa-briefcase"></i> Experiencia</a>
+                <a href="#proyectos" class="nav-item" onclick="showSection('proyectos', this); return false;"><i class="far fa-folder-open"></i> Proyectos</a>
+                <a href="#conocimientos" class="nav-item" onclick="showSection('conocimientos', this); return false;"><i class="fas fa-brain"></i> Conocimientos</a>
+                <a href="#contacto" class="nav-item" onclick="showSection('contacto', this); return false;"><i class="fas fa-envelope"></i> Contacto</a>
+            </nav>
+
+            <div class="sidebar-footer mt-auto text-center">
+                <a href="CV_Maria_Fernanda.pdf" download="CV_Maria_Fernanda.pdf" class="btn btn-download w-100 mb-4">
+                    <i class="fas fa-download me-2"></i> Descargar CV
+                </a>
+
+                <div class="social-icons d-flex justify-content-center gap-3">
+                    <a href="https://github.com/fernangar2648-design" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:fergarc333@gmail.com" title="Correo"><i class="fas fa-envelope"></i></a>
+                    <a href="tel:5654907679" title="Teléfono"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- NAVEGACIÓN MÓVIL (Celulares y Tablets) -->
+        <nav class="navbar navbar-dark d-lg-none mobile-nav px-3 w-100 fixed-top">
+            <a class="navbar-brand" href="#"><i class="fas fa-code text-pink"></i> Maria Fernanda</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mobileMenu">
+                <ul class="navbar-nav ms-auto py-3">
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('inicio', this); return false;">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('perfil', this); return false;">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('habilidades', this); return false;">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('experiencia', this); return false;">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('proyectos', this); return false;">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('conocimientos', this); return false;">Conocimientos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" onclick="showSection('contacto', this); return false;">Contacto</a></li>
+                    <li class="nav-item mt-3">
+                        <a href="CV_Maria_Fernanda.pdf" download="CV_Maria_Fernanda.pdf" class="btn btn-download w-100">
+                            <i class="fas fa-download me-2"></i> Descargar CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="main-content d-flex flex-column" style="min-height: 100vh;">
+
+            <div class="flex-grow-1">
+                <!-- SECCIÓN 1: INICIO -->
+                <section id="inicio" class="content-section active-section">
+                    <div class="d-flex flex-column justify-content-center h-100" style="min-height: 85vh;">
+                        
+                        <div class="row align-items-center mb-4">
+                            <div class="col-auto text-center text-md-start mb-3 mb-md-0">
+                                <div class="polaroid-wrapper" style="width: 100px; height: 150px;">
+                                    <img src="imagencv.jpg" alt="Maria Fernanda" style="width: 100%; height: 100%; object-fit: cover; border-radius: 6px;">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h1 class="display-5 fw-bold text-white mb-1" style="letter-spacing: -1px;">Maria Fernanda Rodriguez García</h1>
+                                <h3 class="fs-5 fw-semibold text-blue-accent mb-1">Licenciatura en Informática</h3>
+                                <h4 class="fs-6 text-muted-light mb-0">Facultad de Estudios Superiores - UNAM, Cuautitlán | 7.º Semestre</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="row mt-3 align-items-center">
+                            <div class="col-12 col-xl-6 mb-4 mb-xl-0">
+                                <div class="info-card">
+                                    <div class="info-item">
+                                        <i class="fas fa-phone text-pink"></i>
+                                        <div><strong>Teléfono:</strong> <span>5654907679</span></div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-envelope text-pink"></i>
+                                        <div><strong>Email:</strong> <span>fergarc333@gmail.com</span></div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-map-marker-alt text-pink"></i>
+                                        <div><strong>Dirección:</strong> <span>Centro de Cómputo</span></div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="fas fa-birthday-cake text-pink"></i>
+                                        <div><strong>Fecha de nacimiento:</strong> <span>24 de febrero de 2005 (Reynosa, Tamaulipas)</span></div>
+                                    </div>
+                                    <div class="info-item">
+                                        <i class="far fa-id-badge text-pink"></i>
+                                        <div><strong>Perfil:</strong> <span>Mexicana | Mujer | Inglés (Nivel: B1)</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12 col-xl-5 offset-xl-1 text-center">
+                                <img src="image_d97628.png" alt="Aesthetic Pixel Art Setup" class="hero-decorative-img img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 2: PERFIL -->
+                <section id="perfil" class="content-section" style="display: none;">
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            <h2 class="section-title text-white mb-4"><i class="far fa-user text-pink me-2"></i> Perfil Profesional</h2>
+                            <div class="content-box">
+                                <p class="text-muted-light mb-0" style="line-height: 1.8; text-align: justify;">
+                                    Estudiante de 7.º semestre de la Licenciatura en Informática en la UNAM, con una sólida formación académica en desarrollo web, gestión de bases de datos y diseño de sistemas. Mi trayectoria combinando los estudios con la operación de establecimientos y la atención al cliente me ha brindado una gran capacidad de adaptación, comunicación asertiva y una perspectiva orientada a la resolución práctica de problemas diarios. Me considero una persona organizada, responsable y con una disposición genuina para el aprendizaje continuo, lo que me facilita integrarme en dinámicas de trabajo colaborativo. Busco una oportunidad profesional donde pueda aplicar las bases técnicas que he adquirido, apoyar en la implementación de soluciones tecnológicas y seguir formándome dentro del sector de las Tecnologías de la Información.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 3: HABILIDADES -->
+                <section id="habilidades" class="content-section" style="display: none;">
+                    <div class="row">
+                        <div class="col-12 col-lg-9">
+                            <h2 class="section-title text-white mb-4"><i class="far fa-star text-pink me-2"></i> Habilidades</h2>
+                            <div class="content-box">
+                                <ul class="text-muted-light ps-3 mb-0 fs-6" style="line-height: 2.2;">
+                                    <li><span class="text-blue-accent me-2">✔</span> Pensamiento lógico y analítico</li>
+                                    <li><span class="text-blue-accent me-2">✔</span> Resolución de problemas</li>
+                                    <li><span class="text-blue-accent me-2">✔</span> Trabajo en equipo y colaboración</li>
+                                    <li><span class="text-blue-accent me-2">✔</span> Creatividad e iniciativa</li>
+                                    <li><span class="text-blue-accent me-2">✔</span> Responsabilidad y compromiso</li>
+                                    <li><span class="text-blue-accent me-2">✔</span> Disposición para aprender nuevas tecnologías</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 4: EXPERIENCIA LABORAL -->
+                <section id="experiencia" class="content-section" style="display: none;">
+                    <h2 class="section-title text-white mb-4"><i class="fas fa-briefcase text-pink me-2"></i> Experiencia Laboral</h2>
+                    
+                    <div class="row g-4">
+                        <div class="col-12 col-xl-6">
+                            <div class="content-box h-100 p-4">
+                                <h5 class="text-white fw-bold mb-1">Asociada 48 Horas</h5>
+                                <h6 class="text-pink mb-2">Krispy Kreme</h6>
+                                <p class="text-blue-accent small mb-3"><i class="far fa-calendar-alt me-2"></i> 2025 – 2026</p>
+                                <ul class="text-muted-light small ps-3 mb-0" style="line-height: 1.8;">
+                                    <li>Control y arqueo de caja con altos estándares de precisión en cortes diarios.</li>
+                                    <li>Preparación de bebidas y alimentos siguiendo estrictas normas de calidad e higiene.</li>
+                                    <li>Atención al cliente bajo un esquema de servicio ágil y de alta eficiencia.</li>
+                                    <li>Gestión, rotación y acomodo de mercancía en piso de venta.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6">
+                            <div class="content-box h-100 p-4">
+                                <h5 class="text-white fw-bold mb-1">Armadora</h5>
+                                <h6 class="text-pink mb-2">Comercial City Fresko</h6>
+                                <p class="text-blue-accent small mb-3"><i class="far fa-calendar-alt me-2"></i> 2025 – 2025</p>
+                                <ul class="text-muted-light small ps-3 mb-0" style="line-height: 1.8;">
+                                    <li>Atención personalizada al cliente y resolución de dudas en piso de venta.</li>
+                                    <li>Control, organización y exhibición estratégica de mercancía para maximizar el impacto visual.</li>
+                                    <li>Apoyo en la gestión de inventarios y mantenimiento del orden en almacén.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6">
+                            <div class="content-box h-100 p-4">
+                                <h5 class="text-white fw-bold mb-1">Vendedora</h5>
+                                <h6 class="text-pink mb-2">Moda Trender</h6>
+                                <p class="text-blue-accent small mb-3"><i class="far fa-calendar-alt me-2"></i> 2024 – 2025</p>
+                                <ul class="text-muted-light small ps-3 mb-0" style="line-height: 1.8;">
+                                    <li>Asesoramiento de imagen y ventas sugeridas a clientes, orientada al cumplimiento de metas de la tienda.</li>
+                                    <li>Recepción, conteo y etiquetado de nueva mercancía.</li>
+                                    <li>Cobro con terminales bancarias y manejo de punto de venta.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-6">
+                            <div class="content-box h-100 p-4">
+                                <h5 class="text-white fw-bold mb-1">Ayudante General</h5>
+                                <h6 class="text-pink mb-2">Miscelánea Local</h6>
+                                <p class="text-blue-accent small mb-3"><i class="far fa-calendar-alt me-2"></i> 2016 – 2024</p>
+                                <ul class="text-muted-light small ps-3 mb-0" style="line-height: 1.8;">
+                                    <li>Responsable general de la atención al cliente, cobro en caja y manejo de efectivo.</li>
+                                    <li>Control de stock, recepción de proveedores y surtido de mercancía.</li>
+                                    <li>Mantenimiento general de la operación y limpieza del establecimiento.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 5: PROYECTOS -->
+                <section id="proyectos" class="content-section" style="display: none;">
+                    <h2 class="section-title text-white mb-4"><i class="far fa-folder-open text-pink me-2"></i> Proyectos Destacados</h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="tech-card h-100">
+                                <i class="fas fa-cubes card-icon text-blue-accent"></i>
+                                <h5 class="fw-bold text-white mt-2">Seasoning</h5>
+                                <p class="small text-pink mb-2">Sistema de Gestión Empresarial</p>
+                                <p class="text-muted-light small mb-4 flex-grow-1">
+                                    Desarrollo de un sistema web para gestionar inventario, producción, compras y ventas de una empresa de condimentos.
+                                </p>
+                                <div class="tech-tags">
+                                    <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>PHP</span> <span>MYSQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="tech-card h-100">
+                                <i class="fas fa-futbol card-icon text-blue-accent"></i>
+                                <h5 class="fw-bold text-white mt-2">Club FES Deportiva</h5>
+                                <p class="small text-pink mb-2">Desarrollo web Front-end</p>
+                                <p class="text-muted-light small mb-4 flex-grow-1">
+                                    Plataforma digital responsiva orientada a la difusión de eventos deportivos universitarios y transmisiones en vivo.
+                                </p>
+                                <div class="tech-tags">
+                                    <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-xl-4">
+                            <div class="tech-card h-100">
+                                <i class="fas fa-baby card-icon text-blue-accent"></i>
+                                <h5 class="fw-bold text-white mt-2">Movi-Baby</h5>
+                                <p class="small text-pink mb-2">Hardware e IoT</p>
+                                <p class="text-muted-light small mb-4 flex-grow-1">
+                                    Sistema automatizado para cunas con monitoreo de temperatura, humedad y sonido mediante Arduino.
+                                </p>
+                                <div class="tech-tags">
+                                    <span>C++</span> <span>Arduino Uno</span> <span>Sensores</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 6: CONOCIMIENTOS -->
+                <section id="conocimientos" class="content-section" style="display: none;">
+                    <div class="row">
+                        <div class="col-12 col-lg-10">
+                            <h2 class="section-title text-white mb-4"><i class="fas fa-brain text-pink me-2"></i> Conocimientos Técnicos</h2>
+                            
+                            <div class="content-box p-4">
+                                <div class="accordion accordion-flush custom-accordion" id="accordionConocimientos">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                                                <i class="fas fa-code text-blue-accent me-3"></i> Desarrollo de Software
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionConocimientos">
+                                            <div class="accordion-body">
+                                                Fundamentos de programación, Programación Orientada a Objetos (POO), diseño de algoritmos y estructuras de control utilizando Java y C++.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                                                <i class="fas fa-globe text-pink me-3"></i> Desarrollo Web (Front-end y Back-end)
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionConocimientos">
+                                            <div class="accordion-body">
+                                                Estructura, diseño responsivo (UI/UX) y programación de sitios web y aplicaciones dinámicas empleando HTML, CSS, JavaScript, PHP y Bootstrap.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                                                <i class="fas fa-database text-blue-accent me-3"></i> Bases de Datos
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionConocimientos">
+                                            <div class="accordion-body">
+                                                Diseño, modelado lógico (Entidad-Relación), normalización, creación de triggers y administración básica de bases de datos relacionales con MySQL y SQL Server.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour">
+                                                <i class="fas fa-microchip text-pink me-3"></i> Electrónica, IoT y Automatización
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionConocimientos">
+                                            <div class="accordion-body">
+                                                Fundamentos de sistemas embebidos y desarrollo de proyectos integrando microcontroladores (Arduino, ESP32), actuadores y sensores.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingFive">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive">
+                                                <i class="fas fa-cogs text-blue-accent me-3"></i> Herramientas y entornos de desarrollo
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionConocimientos">
+                                            <div class="accordion-body">
+                                                Visual Studio Code, NetBeans, IntelliJ IDEA, XAMPP y phpMyAdmin; entornos para programación y pruebas de aplicaciones web.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item border-0">
+                                        <h2 class="accordion-header" id="flush-headingSix">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix">
+                                                <i class="fas fa-file-alt text-pink me-3"></i> Ofimática y Gestión de Información
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionConocimientos">
+                                            <div class="accordion-body">
+                                                Procesamiento de datos, elaboración de reportes, presentaciones y hojas de cálculo con Microsoft Office.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN 7: CONTACTO -->
+                <section id="contacto" class="content-section" style="display: none;">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="section-title text-white mb-4"><i class="fas fa-envelope text-pink me-2"></i> Contacto</h2>
+                            <div class="row">
+                                <!-- Columna del Formulario -->
+                                <div class="col-12 col-md-6 mb-4 mb-md-0">
+                                    <div class="sib-form p-4 rounded shadow-sm bg-white" style="text-align: center;">
+                                        <div id="sib-form-container" class="sib-form-container">
+                                            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:transparent; max-width:540px; border-radius:3px; border-width:0px; direction:ltr">
+                                                
+                                                <form id="sib-form">
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-form-block" style="font-size:26px; text-align:left; font-weight:700; font-family:&quot;Helvetica&quot;, sans-serif; color:#0B192C; background-color:transparent;">
+                                                            <p>Formulario de Contacto</p>
+                                                        </div>
+                                                    </div>
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-form-block" style="font-size:15px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#333333; background-color:transparent;">
+                                                            <div class="sib-text-form-block">
+                                                                <p>Para más información por favor llene el siguiente formulario</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Campo Nombre -->
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-input sib-form-block">
+                                                            <div class="form__entry entry_block">
+                                                                <div class="form__label-row">
+                                                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:14px; font-family:&quot;Helvetica&quot;, sans-serif; color:#000000;" for="NOMBRE" data-required="*">Introduzca su NOMBRE</label>
+                                                                    <div class="entry__field">
+                                                                        <input class="input form-control text-dark" maxlength="200" type="text" id="NOMBRE" name="Nombre" autocomplete="off" placeholder="Tu nombre" required />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Campo Email -->
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-input sib-form-block">
+                                                            <div class="form__entry entry_block">
+                                                                <div class="form__label-row">
+                                                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:14px; font-family:&quot;Helvetica&quot;, sans-serif; color:#000000;" for="EMAIL" data-required="*">Introduzca su dirección de e-mail</label>
+                                                                    <div class="entry__field">
+                                                                        <input class="input form-control text-dark" type="email" id="EMAIL" name="Correo" autocomplete="off" placeholder="Tu correo electrónico" required />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Campo Teléfono -->
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-sms-field sib-form-block">
+                                                            <div class="form__entry entry_block">
+                                                                <div class="form__label-row">
+                                                                    <label class="entry__label" style="font-weight: 700; text-align:left; font-size:14px; font-family:&quot;Helvetica&quot;, sans-serif; color:#000000;" for="SMS">Introduzca su Teléfono</label>
+                                                                    <div class="sib-sms-input-wrapper" style="direction:ltr">
+                                                                        <div class="sib-sms-input d-flex gap-2">
+                                                                            <div class="entry__field" style="width: 100%">
+                                                                                <input type="tel" class="input form-control text-dark" id="SMS" name="Telefono" autocomplete="off" placeholder="Número de teléfono" required />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Aviso de Privacidad -->
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-optin sib-form-block" data-required="true">
+                                                            <div class="form__entry entry_mcq">
+                                                                <div class="form__label-row">
+                                                                    <div class="entry__choice">
+                                                                        <label class="d-flex align-items-center gap-2">
+                                                                            <input type="checkbox" class="form-check-input mt-0" value="1" id="OPT_IN" name="OPT_IN" required />
+                                                                            <span style="font-size:13px; text-align:left; font-family:&quot;Helvetica&quot;, sans-serif; color:#000000; background-color:transparent;">
+                                                                                He leído el Aviso de Privacidad
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <!-- Botones Directos -->
+                                                    <div style="padding: 8px 0;">
+                                                        <div class="sib-form-block" style="text-align: left">
+                                                            <a class="btn btn-download px-4 py-2 w-100 mb-2" href="mailto:fergarc333@gmail.com" style="text-decoration: none; display: inline-block; text-align: center;">
+                                                                <i class="fas fa-envelope me-2"></i> Enviar correo
+                                                            </a>
+                                                            <button type="button" onclick="enviarWhatsApp()" class="btn btn-success w-100">
+                                                                <i class="fab fa-whatsapp me-2"></i> Enviar directo por WhatsApp
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Columna del Mapa de Google Maps -->
+                                <div class="col-12 col-md-6">
+                                    <div class="content-box p-3 h-100 d-flex align-items-center bg-white">
+                                        <iframe src="https://maps.google.com/maps?q=Centro%20de%20C%C3%B3mputo,%20FES%20Cuautitl%C3%A1n%20Campo%204&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="440" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- FOOTER PERSONALIZADO -->
+            <footer class="text-center mt-5 pb-3">
+                <small class="text-muted-light" style="color: #A3B8CC;">&copy; 2026 Copyright Maria Fernanda Rodriguez García. Todos los derechos reservados.</small>
+            </footer>
+
+        </main>
+    </div>
+    
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        function showSection(sectionId, clickedElement) {
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            
+            var activeSection = document.getElementById(sectionId);
+            if (activeSection) {
+                activeSection.style.display = 'block';
+                activeSection.style.animation = 'fadeIn 0.4s ease-in-out';
+            }
+
+            var navItems = document.querySelectorAll('.nav-item, .nav-link');
+            navItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            
+            if (clickedElement) {
+                clickedElement.classList.add('active');
+            }
+            
+            var navbarCollapse = document.getElementById('mobileMenu');
+            if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                var bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+                if (bsCollapse) {
+                    bsCollapse.hide();
+                } else {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+            }
+        }
+
+        // Script para armar el mensaje de WhatsApp exacto sin duplicados
+        function enviarWhatsApp() {
+            var form = document.getElementById('sib-form');
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+            
+            var nombre = document.getElementById('NOMBRE').value.trim() || '_____';
+            var telefono = document.getElementById('SMS').value.trim() || '___';
+            var email = document.getElementById('EMAIL').value.trim() || '___';
+            
+            var mensaje = `Hola Fernanda, soy ${nombre}, mi contacto es ${telefono} y ${email}`;
+            var url = `https://wa.me/525654907679?text=${encodeURIComponent(mensaje)}`;
+            
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
